@@ -23,18 +23,18 @@
 	<key>STORAGE_BUCKET</key>
 	<string>dev-chat-38de8.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:653796094814:ios:82529cac6babf389</string>
 	<key>DATABASE_URL</key>
-	<string>https://dev-chat-38de8.firebaseio.com</string>
+	<string>https://dev-chat-38de8.firebaseio.com/</string>
 </dict>
 </plist>

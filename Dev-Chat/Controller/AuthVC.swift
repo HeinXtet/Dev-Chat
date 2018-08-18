@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AuthVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func gLoginPressed(_ sender: Any) {
+    }
+    @IBAction func fbLoginPressed(_ sender: Any) {
+    }
+    @IBAction func loginEmailPressed(_ sender: Any) {
+        
+        let emailVc = storyboard?.instantiateViewController(withIdentifier: "EmailLoginVC") as! EmailLoginVC
+        self.presentVC(viewController: emailVc)
+    }
+    
 }
 
