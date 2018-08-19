@@ -10,12 +10,37 @@ import UIKit
 import CoreData
 import Firebase
 import FirebaseAuth
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
+    
+    private func showNoti(){
+        //creating the notification content
+        let content = UNMutableNotificationContent()
+        
+        //adding title, subtitle, body and badge
+        content.title = "Hey this is Simplified iOS"
+        
+        content.subtitle = "iOS Development is fun"
+        content.body = "We are learning about iOS Local Notification"
+        content.badge = 1
+        
+        //getting the notification trigger
+        //it will be called after 5 seconds
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        //getting the notification request
+        let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().delegate = self
+        
+        //adding the notification to notification center
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
@@ -47,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
      @objc func notiComming(){
         print("noti comming")
-    }
+showNoti()    }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.

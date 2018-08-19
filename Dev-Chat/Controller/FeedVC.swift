@@ -49,6 +49,7 @@ class FeedVC: UIViewController,UNUserNotificationCenterDelegate {
         
         //adding title, subtitle, body and badge
         content.title = "Hey this is Simplified iOS"
+        
         content.subtitle = "iOS Development is fun"
         content.body = "We are learning about iOS Local Notification"
         content.badge = 1
