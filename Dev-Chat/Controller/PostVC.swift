@@ -23,7 +23,7 @@ class PostVC: UIViewController {
         
     }
     @IBAction func clsoeBtnPressed(_ sender: Any) {
-       dissmsis()
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func postBtnPressed(_ sender: Any) {
         ProgressHUD.show("Please wait...", interaction: false)
@@ -50,10 +50,17 @@ class PostVC: UIViewController {
     private func setUpView(){
         postBtn.bindToKeyboard()
         postText.delegate = self
+        if let email = Auth.auth().currentUser?.email{
+             userEmail.text = email
+        }else{
+            userEmail.text = Auth.auth().currentUser?.displayName
+        }
+       
     }
     
     
     private func dissmsis(){
+        
         self.dismiss(animated: true) {
             NotificationCenter.default.post(name: dissmissHandler, object: nil)
         }

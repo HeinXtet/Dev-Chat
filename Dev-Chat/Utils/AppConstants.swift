@@ -9,3 +9,5 @@
 import Foundation
 
 let dissmissHandler  =  NSNotification.Name(rawValue: "modalIsDimissed")
+let noti_mess  =  NSNotification.Name(rawValue: "backgroundMessage")
+

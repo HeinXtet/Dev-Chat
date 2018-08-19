@@ -11,5 +11,8 @@ target 'Dev-Chat' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Database'
 	pod 'ProgressHUD'
+	pod 'FacebookLogin'
+	pod 'Firebase/Auth'
 
+	
 end

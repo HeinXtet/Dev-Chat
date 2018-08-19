@@ -22,7 +22,7 @@ class AuthService {
                 return
             }
             let userData = user.user
-            let data = ["provider" : userData.providerID , "email" : userData.email] as Dictionary
+            let data = ["provider" : userData.providerID , "email" : userData.email , "name" : userData.displayName] as Dictionary
             print("register success \(data) \(user.user.uid)")
             DataService.instance.createUserDB(uId: userData.uid, userData:  data )
             createUserCompletionHander(true,nil)
@@ -39,6 +39,27 @@ class AuthService {
             loginUserCompletionHander(true,nil)
         }
     }
+    
+    func loginFb(token : String , completionHandler : @escaping (_ success : Bool)->Void){
+        let credential = FacebookAuthProvider.credential(withAccessToken: token)
+        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+            if let error = error {
+                debugPrint("facebook login error \(String(describing: error.localizedDescription))")
+                completionHandler(false)
+                return
+            }
+            if let user = authResult?.user{
+                var email = user.email
+                if user.email == nil{
+                    email = user.displayName
+                }
+                let data = ["provider" : user.providerID , "email" : email , "name" : user.displayName] as Dictionary
+                DataService.instance.createUserDB(uId: user.uid, userData: data)
+                completionHandler(true)
+            }
+        }
+    }
+
     
 }
 

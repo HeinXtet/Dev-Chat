@@ -30,6 +30,8 @@
 		EEE8D5222128099700177051 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D5212128099700177051 /* AuthService.swift */; };
 		EEE8D52421281C0100177051 /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D52321281C0100177051 /* ViewControllerExt.swift */; };
 		EEE8D5262128207C00177051 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D5252128207C00177051 /* UIViewExt.swift */; };
+		EEEDC6B6212952F0008820B5 /* ProfileHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEDC6B5212952F0008820B5 /* ProfileHeaderCell.swift */; };
+		EEEDC6B8212954B0008820B5 /* ProfileFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEDC6B7212954B0008820B5 /* ProfileFeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		EEE8D5212128099700177051 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EEE8D52321281C0100177051 /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
 		EEE8D5252128207C00177051 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		EEEDC6B5212952F0008820B5 /* ProfileHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCell.swift; sourceTree = "<group>"; };
+		EEEDC6B7212954B0008820B5 /* ProfileFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 				EEE8D51B2127FCFE00177051 /* InserTxField.swift */,
 				EEE8D51D2127FEDC00177051 /* ShadowView.swift */,
 				EE1F050C212893230022D9B8 /* FeedCell.swift */,
+				EEEDC6B5212952F0008820B5 /* ProfileHeaderCell.swift */,
+				EEEDC6B7212954B0008820B5 /* ProfileFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,6 +227,11 @@
 				TargetAttributes = {
 					EEE076D921272EFD00D49E72 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -264,6 +275,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Dev-Chat/Pods-Dev-Chat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
@@ -272,6 +288,11 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
@@ -309,6 +330,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE8D51E2127FEDC00177051 /* ShadowView.swift in Sources */,
+				EEEDC6B8212954B0008820B5 /* ProfileFeedCell.swift in Sources */,
+				EEEDC6B6212952F0008820B5 /* ProfileHeaderCell.swift in Sources */,
 				EE2CEA442128A98A00603139 /* AppConstants.swift in Sources */,
 				EEE8D52421281C0100177051 /* ViewControllerExt.swift in Sources */,
 				EEE8D5262128207C00177051 /* UIViewExt.swift in Sources */,
