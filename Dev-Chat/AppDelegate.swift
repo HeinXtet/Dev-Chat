@@ -54,8 +54,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
             window?.makeKeyAndVisible()
             window?.rootViewController?.presentVC(viewController: authVC)
         }else{
-           
             debugPrint("already login \(String(describing: Auth.auth().currentUser?.email))")
+            if let email = Auth.auth().currentUser?.email{
+                userEmail = email
+            }else{
+                if let displayName = Auth.auth().currentUser?.displayName{
+                    userEmail = displayName
+                }
+            }
         }
         
         return true

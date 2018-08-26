@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8EFB9A936C9E6CA2AFFE0E48 /* Pods_Dev_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647A13F68A1FF2CF69AE8B2 /* Pods_Dev_Chat.framework */; };
+		EE1AD7FB212AF9E50042AAF1 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1AD7FA212AF9E50042AAF1 /* CreateGroupVC.swift */; };
+		EE1AD7FD212AFA1E0042AAF1 /* GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1AD7FC212AFA1E0042AAF1 /* GroupVC.swift */; };
+		EE1AD801212B1BE20042AAF1 /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1AD800212B1BE20042AAF1 /* EmailCell.swift */; };
 		EE1F0507212864B90022D9B8 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1F0506212864B90022D9B8 /* ProfileVC.swift */; };
 		EE1F050921287FE30022D9B8 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1F050821287FE30022D9B8 /* PostVC.swift */; };
 		EE1F050B212880910022D9B8 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1F050A212880910022D9B8 /* FeedVC.swift */; };
@@ -16,6 +19,11 @@
 		EE2CEA402128A49E00603139 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CEA3F2128A49E00603139 /* Utils.swift */; };
 		EE2CEA422128A6B000603139 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CEA412128A6B000603139 /* DateExt.swift */; };
 		EE2CEA442128A98A00603139 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CEA432128A98A00603139 /* AppConstants.swift */; };
+		EE783EC22132BC7700A543D4 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783EC12132BC7700A543D4 /* GroupCell.swift */; };
+		EE783EC42132BD5600A543D4 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783EC32132BD5600A543D4 /* GroupModel.swift */; };
+		EE783EC62132F1F700A543D4 /* GroupMessgaeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783EC52132F1F700A543D4 /* GroupMessgaeVC.swift */; };
+		EEA3637E21328B9B0025B902 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3637D21328B9B0025B902 /* UserModel.swift */; };
+		EEAF752E213317EE00E938FC /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF752D213317EE00E938FC /* KeyboardLayoutConstraint.swift */; };
 		EEE076DE21272EFD00D49E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE076DD21272EFD00D49E72 /* AppDelegate.swift */; };
 		EEE076E021272EFD00D49E72 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE076DF21272EFD00D49E72 /* AuthVC.swift */; };
 		EEE076E321272EFD00D49E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE076E121272EFD00D49E72 /* Main.storyboard */; };
@@ -38,6 +46,9 @@
 		29D49F2AA8E10FBBA711D3BF /* Pods-Dev-Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dev-Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dev-Chat/Pods-Dev-Chat.release.xcconfig"; sourceTree = "<group>"; };
 		2E82A81A9F450345CC044472 /* Pods-Dev-Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dev-Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dev-Chat/Pods-Dev-Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		6647A13F68A1FF2CF69AE8B2 /* Pods_Dev_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dev_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1AD7FA212AF9E50042AAF1 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		EE1AD7FC212AFA1E0042AAF1 /* GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupVC.swift; sourceTree = "<group>"; };
+		EE1AD800212B1BE20042AAF1 /* EmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
 		EE1F0506212864B90022D9B8 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		EE1F050821287FE30022D9B8 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		EE1F050A212880910022D9B8 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -46,6 +57,11 @@
 		EE2CEA3F2128A49E00603139 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		EE2CEA412128A6B000603139 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		EE2CEA432128A98A00603139 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		EE783EC12132BC7700A543D4 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		EE783EC32132BD5600A543D4 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		EE783EC52132F1F700A543D4 /* GroupMessgaeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMessgaeVC.swift; sourceTree = "<group>"; };
+		EEA3637D21328B9B0025B902 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EEAF752D213317EE00E938FC /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		EEE076DA21272EFD00D49E72 /* Dev-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE076DD21272EFD00D49E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE076DF21272EFD00D49E72 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
@@ -150,6 +166,9 @@
 				EE1F0506212864B90022D9B8 /* ProfileVC.swift */,
 				EE1F050821287FE30022D9B8 /* PostVC.swift */,
 				EE1F050A212880910022D9B8 /* FeedVC.swift */,
+				EE1AD7FA212AF9E50042AAF1 /* CreateGroupVC.swift */,
+				EE1AD7FC212AFA1E0042AAF1 /* GroupVC.swift */,
+				EE783EC52132F1F700A543D4 /* GroupMessgaeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				EE1F050E212893BD0022D9B8 /* MessageModel.swift */,
+				EEA3637D21328B9B0025B902 /* UserModel.swift */,
+				EE783EC32132BD5600A543D4 /* GroupModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +191,9 @@
 				EE1F050C212893230022D9B8 /* FeedCell.swift */,
 				EEEDC6B5212952F0008820B5 /* ProfileHeaderCell.swift */,
 				EEEDC6B7212954B0008820B5 /* ProfileFeedCell.swift */,
+				EE1AD800212B1BE20042AAF1 /* EmailCell.swift */,
+				EE783EC12132BC7700A543D4 /* GroupCell.swift */,
+				EEAF752D213317EE00E938FC /* KeyboardLayoutConstraint.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,19 +358,27 @@
 				EEEDC6B6212952F0008820B5 /* ProfileHeaderCell.swift in Sources */,
 				EE2CEA442128A98A00603139 /* AppConstants.swift in Sources */,
 				EEE8D52421281C0100177051 /* ViewControllerExt.swift in Sources */,
+				EE1AD7FB212AF9E50042AAF1 /* CreateGroupVC.swift in Sources */,
 				EEE8D5262128207C00177051 /* UIViewExt.swift in Sources */,
 				EEE8D5202127FF8000177051 /* EmailLoginVC.swift in Sources */,
 				EEE076E621272EFD00D49E72 /* Dev_Chat.xcdatamodeld in Sources */,
+				EEAF752E213317EE00E938FC /* KeyboardLayoutConstraint.swift in Sources */,
 				EEE8D51C2127FCFE00177051 /* InserTxField.swift in Sources */,
+				EE783EC22132BC7700A543D4 /* GroupCell.swift in Sources */,
+				EEA3637E21328B9B0025B902 /* UserModel.swift in Sources */,
+				EE1AD7FD212AFA1E0042AAF1 /* GroupVC.swift in Sources */,
 				EE1F050B212880910022D9B8 /* FeedVC.swift in Sources */,
 				EE2CEA402128A49E00603139 /* Utils.swift in Sources */,
+				EE783EC62132F1F700A543D4 /* GroupMessgaeVC.swift in Sources */,
 				EE1F050D212893230022D9B8 /* FeedCell.swift in Sources */,
 				EE1F050921287FE30022D9B8 /* PostVC.swift in Sources */,
 				EE2CEA422128A6B000603139 /* DateExt.swift in Sources */,
+				EE1AD801212B1BE20042AAF1 /* EmailCell.swift in Sources */,
 				EEE076E021272EFD00D49E72 /* AuthVC.swift in Sources */,
 				EE1F050F212893BD0022D9B8 /* MessageModel.swift in Sources */,
 				EEE076DE21272EFD00D49E72 /* AppDelegate.swift in Sources */,
 				EEE8D51A2127D0DE00177051 /* DataService.swift in Sources */,
+				EE783EC42132BD5600A543D4 /* GroupModel.swift in Sources */,
 				EE1F0507212864B90022D9B8 /* ProfileVC.swift in Sources */,
 				EEE8D5222128099700177051 /* AuthService.swift in Sources */,
 			);
