@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
                                                object: self)
         if (Auth.auth().currentUser == nil){
             let storyboad = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let authVC = storyboad.instantiateViewController(withIdentifier: "AuthVC") as! AuthVC
+            let authVC = storyboad.instantiateViewController(withIdentifier: "AuthVC") as! AuthVC //AuthVC
             window?.makeKeyAndVisible()
             window?.rootViewController?.presentVC(viewController: authVC)
         }else{
@@ -63,7 +63,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
                 }
             }
         }
-        
         return true
     }
 

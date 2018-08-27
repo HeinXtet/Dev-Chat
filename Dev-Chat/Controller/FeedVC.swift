@@ -91,7 +91,7 @@ class FeedVC: UIViewController,UNUserNotificationCenterDelegate {
     }
     
 func getAllMessage(){
-        ProgressHUD.show("Please wait... ", interaction: false)
+       // ProgressHUD.show("Please wait... ", interaction: false)
         DataService.instance.getAllMessage(groupkey: nil) { (success, messages) in
             if (success){
                 self.messages.removeAll()
