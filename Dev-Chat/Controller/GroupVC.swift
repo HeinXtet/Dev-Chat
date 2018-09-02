@@ -64,7 +64,7 @@ extension GroupVC : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "GroupMessageVC") as!
         GroupMessgaeVC
-        
+        vc.setGroupInfo(groupInfo: groupArray[indexPath.row])
         self.presentVC(viewController: vc)
     }
     

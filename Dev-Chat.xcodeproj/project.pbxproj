@@ -23,6 +23,8 @@
 		EE783EC22132BC7700A543D4 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783EC12132BC7700A543D4 /* GroupCell.swift */; };
 		EE783EC42132BD5600A543D4 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783EC32132BD5600A543D4 /* GroupModel.swift */; };
 		EE783EC62132F1F700A543D4 /* GroupMessgaeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783EC52132F1F700A543D4 /* GroupMessgaeVC.swift */; };
+		EE8D6735213BE08000939982 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D6734213BE08000939982 /* MessageCell.swift */; };
+		EE8D6737213BE0E500939982 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D6736213BE0E500939982 /* ChatVC.swift */; };
 		EEA3637E21328B9B0025B902 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3637D21328B9B0025B902 /* UserModel.swift */; };
 		EEAF752E213317EE00E938FC /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF752D213317EE00E938FC /* KeyboardLayoutConstraint.swift */; };
 		EEE076DE21272EFD00D49E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE076DD21272EFD00D49E72 /* AppDelegate.swift */; };
@@ -32,6 +34,8 @@
 		EEE076E821272EFF00D49E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE076E721272EFF00D49E72 /* Assets.xcassets */; };
 		EEE076EB21272EFF00D49E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE076E921272EFF00D49E72 /* LaunchScreen.storyboard */; };
 		EEE076F821272F9500D49E72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE076F721272F9500D49E72 /* GoogleService-Info.plist */; };
+		EEE3B765213BFC2F00D21D2E /* OtherSenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3B764213BFC2E00D21D2E /* OtherSenderCell.swift */; };
+		EEE3B767213BFDCC00D21D2E /* SelfSenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3B766213BFDCC00D21D2E /* SelfSenderCell.swift */; };
 		EEE8D51A2127D0DE00177051 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D5192127D0DE00177051 /* DataService.swift */; };
 		EEE8D51C2127FCFE00177051 /* InserTxField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D51B2127FCFE00177051 /* InserTxField.swift */; };
 		EEE8D51E2127FEDC00177051 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D51D2127FEDC00177051 /* ShadowView.swift */; };
@@ -62,6 +66,8 @@
 		EE783EC12132BC7700A543D4 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		EE783EC32132BD5600A543D4 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		EE783EC52132F1F700A543D4 /* GroupMessgaeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMessgaeVC.swift; sourceTree = "<group>"; };
+		EE8D6734213BE08000939982 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		EE8D6736213BE0E500939982 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		EEA3637D21328B9B0025B902 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		EEAF752D213317EE00E938FC /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		EEE076DA21272EFD00D49E72 /* Dev-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +79,8 @@
 		EEE076EA21272EFF00D49E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEE076EC21272EFF00D49E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEE076F721272F9500D49E72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEE3B764213BFC2E00D21D2E /* OtherSenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherSenderCell.swift; sourceTree = "<group>"; };
+		EEE3B766213BFDCC00D21D2E /* SelfSenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSenderCell.swift; sourceTree = "<group>"; };
 		EEE8D5192127D0DE00177051 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		EEE8D51B2127FCFE00177051 /* InserTxField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InserTxField.swift; sourceTree = "<group>"; };
 		EEE8D51D2127FEDC00177051 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 				EE1AD7FA212AF9E50042AAF1 /* CreateGroupVC.swift */,
 				EE1AD7FC212AFA1E0042AAF1 /* GroupVC.swift */,
 				EE783EC52132F1F700A543D4 /* GroupMessgaeVC.swift */,
+				EE8D6736213BE0E500939982 /* ChatVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +206,9 @@
 				EE783EC12132BC7700A543D4 /* GroupCell.swift */,
 				EEAF752D213317EE00E938FC /* KeyboardLayoutConstraint.swift */,
 				EE0E3C4121343E8F00D135E8 /* MessageTextView.swift */,
+				EE8D6734213BE08000939982 /* MessageCell.swift */,
+				EEE3B764213BFC2E00D21D2E /* OtherSenderCell.swift */,
+				EEE3B766213BFDCC00D21D2E /* SelfSenderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +379,7 @@
 				EEE8D5202127FF8000177051 /* EmailLoginVC.swift in Sources */,
 				EEE076E621272EFD00D49E72 /* Dev_Chat.xcdatamodeld in Sources */,
 				EEAF752E213317EE00E938FC /* KeyboardLayoutConstraint.swift in Sources */,
+				EE8D6735213BE08000939982 /* MessageCell.swift in Sources */,
 				EEE8D51C2127FCFE00177051 /* InserTxField.swift in Sources */,
 				EE783EC22132BC7700A543D4 /* GroupCell.swift in Sources */,
 				EEA3637E21328B9B0025B902 /* UserModel.swift in Sources */,
@@ -374,7 +387,10 @@
 				EE1F050B212880910022D9B8 /* FeedVC.swift in Sources */,
 				EE2CEA402128A49E00603139 /* Utils.swift in Sources */,
 				EE783EC62132F1F700A543D4 /* GroupMessgaeVC.swift in Sources */,
+				EEE3B765213BFC2F00D21D2E /* OtherSenderCell.swift in Sources */,
+				EE8D6737213BE0E500939982 /* ChatVC.swift in Sources */,
 				EE1F050D212893230022D9B8 /* FeedCell.swift in Sources */,
+				EEE3B767213BFDCC00D21D2E /* SelfSenderCell.swift in Sources */,
 				EE1F050921287FE30022D9B8 /* PostVC.swift in Sources */,
 				EE2CEA422128A6B000603139 /* DateExt.swift in Sources */,
 				EE1AD801212B1BE20042AAF1 /* EmailCell.swift in Sources */,

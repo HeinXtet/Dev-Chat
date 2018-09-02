@@ -12,8 +12,10 @@ class GroupModel{
     var groupName : String
     var groupDescription : String
     var members : [String]
+    var groupId : String
     
-    init(groupName : String, description : String , member : [String]) {
+    init(groupId : String, groupName : String, description : String , member : [String]) {
+        self.groupId = groupId
         self.groupName = groupName
         self.groupDescription = description
         self.members = member

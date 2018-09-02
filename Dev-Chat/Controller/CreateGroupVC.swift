@@ -56,7 +56,7 @@ class CreateGroupVC: UIViewController {
     }
     
     @IBAction func doneBtnPressed(_ sender: Any) {
-        
+
         guard let title = nameField.text else {return}
         guard let description  = descriptionField.text else {return}
         
@@ -105,12 +105,10 @@ extension CreateGroupVC : UITableViewDelegate,UITableViewDataSource{
             debugPrint("chooseUser List \(chooseUserList.count)")
             if chooseEmails.count > 0 {
                 choosePersonLb.text = chooseEmails.joined(separator: ",")
-
             }else{
                 choosePersonLb.text = "Add People To Group"
             }
         }
-        
         print("select row \(cell.EmailLb.text!)")
     }
 
